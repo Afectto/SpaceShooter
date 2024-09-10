@@ -11,13 +11,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayZone/BorderHight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerStartPosition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayZone/BorderVertical.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BackgroundController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/SafeAreaData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMove.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/BackgroundController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraWight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayZone/BorderHight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayZone/BorderVertical.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SafeAreaData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStartPosition.cs" />
       </list>
     </option>
   </component>
@@ -60,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725943206580</updated>
-      <workItem from="1725943215736" duration="637000" />
+      <workItem from="1725943215736" duration="4518000" />
     </task>
     <servers />
   </component>
