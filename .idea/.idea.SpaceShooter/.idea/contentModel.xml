@@ -32,7 +32,16 @@
           <e p="BackgroundController.cs" t="Include" />
           <e p="CameraWight.cs" t="Include" />
           <e p="Data" t="Include">
+            <e p="LevelData.cs" t="Include" />
             <e p="SafeAreaData.cs" t="Include" />
+          </e>
+          <e p="Enemy" t="Include">
+            <e p="EnemyMove.cs" t="Include" />
+            <e p="EnemyWaves.cs" t="Include" />
+          </e>
+          <e p="GameEventSystem" t="Include">
+            <e p="GameEvent.cs" t="Include" />
+            <e p="GameEventListener.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="PlayerMove.cs" t="Include" />
@@ -42,6 +51,7 @@
             <e p="BorderHight.cs" t="Include" />
             <e p="BorderVertical.cs" t="Include" />
           </e>
+          <e p="StartEvents.cs" t="Include" />
         </e>
       </e>
       <e p="DocCodeExamples.csproj" t="IncludeRecursive" />

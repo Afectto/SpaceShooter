@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SafeAreaData : MonoBehaviour
@@ -13,7 +10,7 @@ public class SafeAreaData : MonoBehaviour
     private const string KeyMinX = "MinX";
     private const string KeyMinY = "MinY";
 
-    private void Awake()
+    private void Start()
     {
         camera = GetComponent<Camera>();
         _max = camera.ScreenToWorldPoint(Screen.safeArea.max);
