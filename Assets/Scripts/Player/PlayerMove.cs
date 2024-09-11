@@ -22,5 +22,9 @@ public class PlayerMove : MonoBehaviour
             _direction.y = joystick.Vertical;
             _rigidbody2D.MovePosition(_rigidbody2D.position + speed * _direction * Time.deltaTime);
         }
+        else
+        {
+            _rigidbody2D.velocity = Vector2.zero;
+        }
     }
 }

@@ -8,20 +8,26 @@ public class EnemyWaves : MonoBehaviour
     private int _indexWave;
     private int _indexEnemy;
     private List<GameObject> _enemies = new List<GameObject>();
+    private SafeAreaData _safeArea;
 
     private void Awake()
     {
+        _safeArea = FindObjectOfType<SafeAreaData>();
         int index = 1;//CurrentLevel
         _level = Resources.Load<LevelData>($"Levels/Level{index}");
     }
 
     public void Generate()
     {
+        var offset = 2.5f;
+        Vector2 startPosition = new Vector2(0, _safeArea.GetMax().y + offset);
+
         foreach (var wave in _level.Waves)
         {
             for (int i = 0; i < wave.CountInWave; i++)
             {
                 var enemy = Instantiate(wave.EnemyPrefab, transform);
+                enemy.transform.position = startPosition;
                 enemy.SetActive(false);
                 _enemies.Add(enemy);
             }
