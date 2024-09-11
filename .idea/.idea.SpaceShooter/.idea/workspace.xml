@@ -34,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayZone/BorderHight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyWaves.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet/IDamageble.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Score/UIScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet/BulletsPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayZone/BorderVertical.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMove.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +68,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/PathData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Path.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Score/ScoreCollector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Score/ObjectScore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Score/UIScore.cs" />
       </list>
     </option>
   </component>
@@ -93,10 +97,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15656">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="24264">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="15656" />
+      <option name="pid" value="24264" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -112,6 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725943206580</updated>
       <workItem from="1725943215736" duration="18437000" />
+      <workItem from="1726070416639" duration="1182000" />
     </task>
     <servers />
   </component>
@@ -219,16 +224,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyMove.cs</url>
-          <line>30</line>
+          <line>28</line>
           <properties documentPath="D:\UnityProgram\SpaceShooter\Assets\Scripts\Enemy\EnemyMove.cs" initialLine="30">
             <startOffsets>
-              <option value="824" />
+              <option value="776" />
             </startOffsets>
             <endOffsets>
-              <option value="846" />
+              <option value="798" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Score/ScoreCollector.cs</url>
+          <line>25</line>
+          <properties documentPath="D:\UnityProgram\SpaceShooter\Assets\Scripts\Score\ScoreCollector.cs" initialLine="25">
+            <startOffsets>
+              <option value="499" />
+            </startOffsets>
+            <endOffsets>
+              <option value="522" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

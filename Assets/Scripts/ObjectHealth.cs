@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -26,6 +23,7 @@ public class ObjectHealth : MonoBehaviour, IDamageble
 
         if (_currentHealth <= 0)
         {
+            OnEndenHealth?.Invoke();
             Destroy(gameObject);
         }
     }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 360798923133260116}
   - component: {fileID: 2338365672497061638}
   - component: {fileID: 6493930989378772347}
+  - component: {fileID: -1825155146726444808}
   - component: {fileID: 7652903364776262762}
   - component: {fileID: 1638545978517429746}
   m_Layer: 7
@@ -147,6 +148,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: -1825155146726444808}
+        m_TargetAssemblyTypeName: ObjectScore, Assembly-CSharp
+        m_MethodName: Activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6493930989378772347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +172,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ec76cbb10974f46aa80f6ba8d43047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1825155146726444808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368664893833694051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d29dbff578a3c7439ca003e191ef341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 10
 --- !u!50 &7652903364776262762
 Rigidbody2D:
   serializedVersion: 4
