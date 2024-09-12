@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyWaves : MonoBehaviour
 {
+    [SerializeField] private BonusGenerator bonusGenerator;
+    [SerializeField] private BonusQueue bonusQueue;
+    
     private LevelData _level;
     private int _indexWave;
     private int _indexEnemy;
@@ -27,9 +30,16 @@ public class EnemyWaves : MonoBehaviour
             for (int i = 0; i < wave.CountInWave; i++)
             {
                 var enemy = Instantiate(wave.EnemyPrefab, transform);
+                if (enemy.TryGetComponent(out EnemyBonusDrop enemyBonusDrop))
+                {
+                    enemyBonusDrop.SetBonusQueue(bonusQueue);
+                    enemyBonusDrop.SetHaveBonus(bonusGenerator.TryGetBonus());
+                }
+                
                 enemy.transform.position = startPosition;
                 enemy.SetActive(false);
                 _enemies.Add(enemy);
+                
             }
         }
     }

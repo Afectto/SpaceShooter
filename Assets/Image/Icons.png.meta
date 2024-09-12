@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sheeld_bonus
+      name: Shield_bonus
       rect:
         serializedVersion: 2
         x: 5
@@ -285,7 +285,7 @@ TextureImporter:
       Health_Full: -613533296
       Score_bonus: -292453449
       Sheeld: -72819900
-      Sheeld_bonus: -1700251398
+      Shield_bonus: -1700251398
       Weapon_bonus: 937048472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

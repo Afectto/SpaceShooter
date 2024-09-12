@@ -29,6 +29,15 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Bonus" t="Include">
+            <e p="BonusBase.cs" t="Include" />
+            <e p="BonusGenerator.cs" t="Include" />
+            <e p="BonusHealth.cs" t="Include" />
+            <e p="BonusQueue.cs" t="Include" />
+            <e p="BonusShield.cs" t="Include" />
+            <e p="EnergyShield.cs" t="Include" />
+            <e p="GameBonusData.cs" t="Include" />
+          </e>
           <e p="Bullet" t="Include">
             <e p="BulletCollision.cs" t="Include" />
             <e p="BulletMove.cs" t="Include" />
@@ -41,6 +50,7 @@
             <e p="SafeAreaData.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
+            <e p="EnemyBonusDrop.cs" t="Include" />
             <e p="EnemyDestruction.cs" t="Include" />
             <e p="EnemyMove.cs" t="Include" />
             <e p="EnemyWaves.cs" t="Include" />
