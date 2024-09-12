@@ -29,14 +29,12 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="BackgroundController.cs" t="Include" />
           <e p="Bullet" t="Include">
             <e p="BulletCollision.cs" t="Include" />
             <e p="BulletMove.cs" t="Include" />
             <e p="BulletsPool.cs" t="Include" />
             <e p="IDamageble.cs" t="Include" />
           </e>
-          <e p="CameraWight.cs" t="Include" />
           <e p="Data" t="Include">
             <e p="LevelData.cs" t="Include" />
             <e p="Path.cs" t="Include" />
@@ -58,17 +56,23 @@
             <e p="PlayerMove.cs" t="Include" />
             <e p="PlayerStartPosition.cs" t="Include" />
           </e>
-          <e p="PlayZone" t="Include">
-            <e p="BorderHight.cs" t="Include" />
-            <e p="BorderVertical.cs" t="Include" />
-          </e>
           <e p="ScenePath.cs" t="Include" />
-          <e p="Score" t="Include">
-            <e p="ObjectScore.cs" t="Include" />
-            <e p="ScoreCollector.cs" t="Include" />
-            <e p="UIScore.cs" t="Include" />
-          </e>
           <e p="StartEvents.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="BackgroundController.cs" t="Include" />
+            <e p="CameraWight.cs" t="Include" />
+            <e p="HealthIconUI.cs" t="Include" />
+            <e p="HealthUI.cs" t="Include" />
+            <e p="PlayZone" t="Include">
+              <e p="BorderHight.cs" t="Include" />
+              <e p="BorderVertical.cs" t="Include" />
+            </e>
+            <e p="Score" t="Include">
+              <e p="ObjectScore.cs" t="Include" />
+              <e p="ScoreCollector.cs" t="Include" />
+              <e p="UIScore.cs" t="Include" />
+            </e>
+          </e>
           <e p="Weapon" t="Include">
             <e p="ShotTimer.cs" t="Include" />
             <e p="WeaponBase.cs" t="Include" />

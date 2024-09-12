@@ -3,17 +3,25 @@ using UnityEngine.Events;
 
 public class PlayerHealth : ObjectHealth
 {
-    [SerializeField] private UnityEvent<int> OnChangeHealth;
+    [SerializeField] private UnityEvent<int> OnTakeDamage;
+    [SerializeField] private UnityEvent<int> OnAddHealth;
+
 
     protected override void Awake()
     {
         base.Awake();
-        OnChangeHealth.Invoke(GetHealth());
+        OnTakeDamage.Invoke(GetHealth());
     }
 
     public override void TakeDamage(int value)
     {
         base.TakeDamage(value);
-        OnChangeHealth.Invoke(GetHealth());
+        OnTakeDamage.Invoke(GetHealth());
+    }
+
+    public override void AddHealth(int value)
+    {
+        base.AddHealth(value);
+        OnAddHealth?.Invoke(value);
     }
 }

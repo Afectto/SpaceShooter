@@ -27,4 +27,12 @@ public class ObjectHealth : MonoBehaviour, IDamageble
             Destroy(gameObject);
         }
     }
+
+    public virtual void AddHealth(int value)
+    {
+        if (value > 0)
+            _currentHealth += value;
+        if (_currentHealth > maxHealth)
+            _currentHealth = maxHealth;
+    }
 }
