@@ -8,6 +8,23 @@ public class ShotTimer : MonoBehaviour
     [SerializeField] private UnityEvent OnShot;
 
     private WaitForSeconds _wait;
+    private Coroutine _timerCoroutine;
+    private bool _isFirstStart;
+
+    private void OnEnable()
+    {
+        if (!_isFirstStart)
+        {
+            _isFirstStart = true;
+            return;
+        }
+        StartTimer();
+    }
+
+    private void OnDisable()
+    {
+        StopTimer();
+    }
     
     private IEnumerator Timer()
     {
@@ -20,7 +37,19 @@ public class ShotTimer : MonoBehaviour
 
     public void StartTimer()
     {
-        _wait = new WaitForSeconds(shotInterval);
-        StartCoroutine(Timer());
+        if (_timerCoroutine == null)
+        {
+            _wait = new WaitForSeconds(shotInterval);
+            _timerCoroutine = StartCoroutine(Timer());
+        }
+    }
+    
+    public void StopTimer()
+    {
+        if (_timerCoroutine != null)
+        {
+            StopCoroutine(_timerCoroutine);
+            _timerCoroutine = null;
+        }
     }
 }

@@ -3,7 +3,6 @@ using UnityEngine;
 public abstract class WeaponBase : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private float delay;
     
     protected BulletsPool BulletsPool;
 

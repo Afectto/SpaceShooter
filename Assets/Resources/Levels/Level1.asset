@@ -19,3 +19,6 @@ MonoBehaviour:
   - EnemyPrefab: {fileID: 5368664893833694051, guid: ff10b59fcf3c7f143b46aed954360d7c, type: 3}
     CountInWave: 10
     WaitAfterWave: 5
+  - EnemyPrefab: {fileID: 5368664893833694051, guid: 91efd792271dda84681bd6419d79bb1c, type: 3}
+    CountInWave: 10
+    WaitAfterWave: 1

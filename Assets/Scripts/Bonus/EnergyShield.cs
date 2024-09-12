@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EnergyShield : MonoBehaviour
 {
-    [SerializeField] private CircleCollider2D collider2D;
+    [SerializeField] private CircleCollider2D circleCollider2D;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
     private float _currentTime;
@@ -34,7 +34,7 @@ public class EnergyShield : MonoBehaviour
 
     private void ShowShield(bool value)
     {
-        collider2D.enabled = value;
+        circleCollider2D.enabled = value;
         spriteRenderer.enabled = value;
         _isEnabled = value;
     }

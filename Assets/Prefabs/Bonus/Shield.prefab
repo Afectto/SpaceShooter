@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faf0c0bdd78a8ee48b1ea6f5c322e304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider2D: {fileID: 6204401027781221504}
+  circleCollider2D: {fileID: 6204401027781221504}
   spriteRenderer: {fileID: 6767813441441085663}
 --- !u!58 &6204401027781221504
 CircleCollider2D:

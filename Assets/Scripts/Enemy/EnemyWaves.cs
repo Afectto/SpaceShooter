@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyWaves : MonoBehaviour
 {
     [SerializeField] private BonusGenerator bonusGenerator;
     [SerializeField] private BonusQueue bonusQueue;
+    [SerializeField] private UnityEvent EndGame;
     
     private LevelData _level;
     private int _indexWave;
@@ -16,8 +18,22 @@ public class EnemyWaves : MonoBehaviour
     private void Awake()
     {
         _safeArea = FindObjectOfType<SafeAreaData>();
-        int index = 1;//CurrentLevel
+        int index = 1;//TODO: CurrentLevel
         _level = Resources.Load<LevelData>($"Levels/Level{index}");
+    }
+
+    private void Update()
+    {
+        foreach (var enemy in _enemies)
+        {
+            if (enemy != null)
+            {
+                return;
+            }
+        }
+
+        EndGame?.Invoke();
+        Time.timeScale = 0;
     }
 
     public void Generate()
@@ -39,7 +55,6 @@ public class EnemyWaves : MonoBehaviour
                 enemy.transform.position = startPosition;
                 enemy.SetActive(false);
                 _enemies.Add(enemy);
-                
             }
         }
     }
@@ -67,6 +82,8 @@ public class EnemyWaves : MonoBehaviour
             Invoke(nameof(Activate), _level.Waves[_indexWave].WaitAfterWave);
             _indexWave++;
         }
+        
+        
     }
 
 }

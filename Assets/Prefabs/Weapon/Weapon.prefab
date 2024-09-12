@@ -41,7 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4496481372357699187}
   - component: {fileID: 4937919933131933431}
-  - component: {fileID: 6693704377209867387}
   - component: {fileID: 4105644917266034337}
   m_Layer: 0
   m_Name: Weapon
@@ -79,36 +78,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8009761745882398052, guid: dd384d1e167ec574ab133a639dc65b98, type: 3}
-  delay: 0.5
-  firePoints: []
---- !u!114 &6693704377209867387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8414222551549648923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c74c049c49cd9d646aa9501fd334cd7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 54ba225d819d18e48ae545a3504fda35, type: 2}
-  action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4105644917266034337}
-        m_TargetAssemblyTypeName: ShotTimer, Assembly-CSharp
-        m_MethodName: StartTimer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  firePoints:
+  - {fileID: 8117280538271069279}
+  - {fileID: 0}
 --- !u!114 &4105644917266034337
 MonoBehaviour:
   m_ObjectHideFlags: 0

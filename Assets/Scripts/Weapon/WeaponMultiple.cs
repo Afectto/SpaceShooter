@@ -7,6 +7,7 @@ public class WeaponMultiple : WeaponBase
 
     public override void Shot()
     {
+        if(!gameObject.activeInHierarchy) return;
         foreach (var point in firePoints)
         {
             BulletActivate(point);

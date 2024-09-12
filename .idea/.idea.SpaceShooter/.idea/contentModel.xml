@@ -32,11 +32,15 @@
           <e p="Bonus" t="Include">
             <e p="BonusBase.cs" t="Include" />
             <e p="BonusGenerator.cs" t="Include" />
-            <e p="BonusHealth.cs" t="Include" />
             <e p="BonusQueue.cs" t="Include" />
-            <e p="BonusShield.cs" t="Include" />
             <e p="EnergyShield.cs" t="Include" />
             <e p="GameBonusData.cs" t="Include" />
+            <e p="SpecifiedBonus" t="Include">
+              <e p="BonusHealth.cs" t="Include" />
+              <e p="BonusShield.cs" t="Include" />
+              <e p="BonusWeapon.cs" t="Include" />
+              <e p="EmptyBonus.cs" t="Include" />
+            </e>
           </e>
           <e p="Bullet" t="Include">
             <e p="BulletCollision.cs" t="Include" />
@@ -65,7 +69,9 @@
             <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerMove.cs" t="Include" />
             <e p="PlayerStartPosition.cs" t="Include" />
+            <e p="PlayerWeaponController.cs" t="Include" />
           </e>
+          <e p="SceneChanger.cs" t="Include" />
           <e p="ScenePath.cs" t="Include" />
           <e p="StartEvents.cs" t="Include" />
           <e p="UI" t="Include">
@@ -82,6 +88,7 @@
               <e p="ScoreCollector.cs" t="Include" />
               <e p="UIScore.cs" t="Include" />
             </e>
+            <e p="WinGameOverlay.cs" t="Include" />
           </e>
           <e p="Weapon" t="Include">
             <e p="ShotTimer.cs" t="Include" />

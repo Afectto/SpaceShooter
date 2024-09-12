@@ -12,7 +12,7 @@ GameObject:
   m_Layer: 0
   m_Name: Point
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -91,16 +91,58 @@ PrefabInstance:
       propertyPath: firePoints.Array.data[0]
       value: 
       objectReference: {fileID: 1414332021219698244}
+    - target: {fileID: 4937919933131933431, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+      propertyPath: OnStartShot.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937919933131933431, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+      propertyPath: OnStartShot.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937919933131933431, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+      propertyPath: OnStartShot.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8859080041935974054, guid: eb1432e888f47104d9dd9a41c1c57b84, type: 3}
+    - target: {fileID: 4937919933131933431, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+      propertyPath: OnStartShot.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937919933131933431, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+      propertyPath: OnStartShot.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937919933131933431, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+      propertyPath: OnStartShot.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ShotTimer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937919933131933431, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+      propertyPath: OnStartShot.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117280538271069279, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117280538271069279, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117280538271069279, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8414222551549648923, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
       propertyPath: m_Name
-      value: WeaponSingle
+      value: PlayerWeaponSingle
       objectReference: {fileID: 0}
     - target: {fileID: 8414222551549648923, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 6693704377209867387, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 1459126200685661970, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8117280538271069279, guid: b35df3b6415715443a5f38e1ad77e21c, type: 3}
       insertIndex: -1

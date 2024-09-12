@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SafeAreaData : MonoBehaviour
 {
-    [SerializeField] private Camera camera;
+    [SerializeField] private Camera cameraMain;
     private Vector2 _max;
     private Vector2 _min;
     private const string KeyMaxX = "MaxX";
@@ -12,9 +12,9 @@ public class SafeAreaData : MonoBehaviour
 
     private void Start()
     {
-        camera = GetComponent<Camera>();
-        _max = camera.ScreenToWorldPoint(Screen.safeArea.max);
-        _min = camera.ScreenToWorldPoint(Screen.safeArea.min);
+        cameraMain = GetComponent<Camera>();
+        _max = cameraMain.ScreenToWorldPoint(Screen.safeArea.max);
+        _min = cameraMain.ScreenToWorldPoint(Screen.safeArea.min);
         SetMax();
         SetMin();
     }
