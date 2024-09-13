@@ -10,7 +10,7 @@ public class PlayerWeaponController : MonoBehaviour
     private WeaponBase _currentWeapon;
     private int _levelWeapon;
 
-    private void Awake()
+    private void Start()
     {
         foreach (var weapon in weaponsByLevel)
         {

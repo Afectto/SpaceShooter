@@ -6,6 +6,8 @@
     <e p="D:\UnityProgram\SpaceShooter" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass-testable.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.Player.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.Player.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -25,6 +27,23 @@
               <e p="FixedJoystick.cs" t="Include" />
               <e p="FloatingJoystick.cs" t="Include" />
               <e p="VariableJoystick.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModuleEPOOutline.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="README.txt" t="Include" />
             </e>
           </e>
         </e>
@@ -63,6 +82,7 @@
             <e p="GameEvent.cs" t="Include" />
             <e p="GameEventListener.cs" t="Include" />
           </e>
+          <e p="GameMenu.cs" t="Include" />
           <e p="ObjectHealth.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="PlayerDestruction.cs" t="Include" />
@@ -85,6 +105,7 @@
             </e>
             <e p="Score" t="Include">
               <e p="ObjectScore.cs" t="Include" />
+              <e p="ScoreAnimation.cs" t="Include" />
               <e p="ScoreCollector.cs" t="Include" />
               <e p="UIScore.cs" t="Include" />
             </e>

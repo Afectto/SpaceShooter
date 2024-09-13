@@ -13,11 +13,6 @@ public class ShotTimer : MonoBehaviour
 
     private void OnEnable()
     {
-        if (!_isFirstStart)
-        {
-            _isFirstStart = true;
-            return;
-        }
         StartTimer();
     }
 

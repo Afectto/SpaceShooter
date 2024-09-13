@@ -5,7 +5,7 @@ public class PlayerStartPosition : MonoBehaviour
     private SafeAreaData _data;
     private const float Offset = 3f;
 
-    private void Start()
+    private void Awake()
     {
         _data = FindObjectOfType<SafeAreaData>();
         SetPosition();
