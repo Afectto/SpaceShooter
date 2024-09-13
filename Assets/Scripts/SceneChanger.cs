@@ -35,6 +35,7 @@ public class SceneChanger : MonoBehaviour
     {
         loadingScreen.gameObject.SetActive(true);
         loadingScreen.DOKill();
+        loadingScreen.DOFade(1f, fadeDuration);
         
         yield return loadingScreen.DOFade(1f, fadeDuration).WaitForCompletion();
 
